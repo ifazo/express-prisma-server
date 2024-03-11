@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "main": "./dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./src/server.ts",
     "start": "node ./dist/server.js",
     "studio": "prisma studio",
     "migrate": "prisma migrate dev",
-    "deploy": "prisma migrate deploy",
-    "postinstall": "prisma generate",
-    "build": "npm run deploy && npm run postinstall"
+    "build": "prisma migrate deploy && prisma generate && tsc"
   },
   "author": "",
   "license": "ISC",
