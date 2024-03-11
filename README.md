@@ -1,68 +1,57 @@
-# postgres-prisma-project
-This is created by @Ifazo
+# Express Prisma Server
 
->> https://ifaz-postgres-prisma.vercel.app/
+This project is an Express.js server integrated with Prisma ORM for database operations. It provides a backend for your application with user authentication and data storage capabilities.
 
-# Application Routes:
+## Live Site
 
-### Auth
+The live site for this project can be accessed at [express-prisma-server.onrender.com](https://express-prisma-server.onrender.com/).
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/auth/signup (POST)
+## Testing
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/auth/signin (POST)
+The server can be test by Postman by accessed at [here](https://www.postman.com/ifaz-team/workspace/ifaz-public-workspace/collection/27476393-4fc64944-a233-4e1b-9e39-aed5892aa072?action=share&creator=27476393).
 
-### User
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/27476393-4fc64944-a233-4e1b-9e39-aed5892aa072?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D27476393-4fc64944-a233-4e1b-9e39-aed5892aa072%26entityType%3Dcollection%26workspaceId%3Db51f2572-811c-4104-bb37-8ab14357641f)
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/profile (Get)
+## Technologies Used
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/users (GET)
+- Express.js: A fast, unopinionated, minimalist web framework for Node.js.
+- Prisma: A modern database toolkit for TypeScript and Node.js.
+- bcrypt: A library to help you hash passwords.
+- cors: Cross-Origin Resource Sharing middleware for Express.js.
+- dotenv: A zero-dependency module that loads environment variables from a .env file into process.env.
+- jsonwebtoken: An implementation of JSON Web Tokens for authentication.
+- TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
+- Nodemon: A utility that monitors for changes in your source code and automatically restarts your server.
+- ts-node: TypeScript execution and REPL for Node.js.
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/users/b1404be6-72bd-4315-8e9d-4f287e0aa461 (GET)
+## Setup
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/users/b1404be6-72bd-4315-8e9d-4f287e0aa461 (PATCH)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/users/b1404be6-72bd-4315-8e9d-4f287e0aa461 ( DELETE)
-
-### Category
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/create-category (POST) 
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/4035eedb-a2b4-47f0-b1db-274f7f83579d (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/4035eedb-a2b4-47f0-b1db-274f7f83579d (PATCH)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/4035eedb-a2b4-47f0-b1db-274f7f83579d ( DELETE)
-
-### Book
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/create-book (POST)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/c811d00b-4eec-46eb-aef3-680f16d1bc2a/category (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/85be0d2b-0ca4-49e1-bda8-c0fbc70c5ab4 (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/85be0d2b-0ca4-49e1-bda8-c0fbc70c5ab4 (PATCH)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/85be0d2b-0ca4-49e1-bda8-c0fbc70c5ab4 ( DELETE)
-
-### Order
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders/create-order (POST)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders (GET) [Only Specific Customers]
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders/:orderId (Get)
-
-### Review & Ratings
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/reviews (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/reviews (POST)
+1. Clone the repository:
 
 
+2. Navigate to the project directory:
+
+
+3. Install dependencies:
+
+
+4. Create a `.env` file in the root directory and configure environment variables:
+
+
+5. Run database migrations:
+
+
+6. Generate Prisma client:
+
+
+7. Start the server:
+
+
+## Development
+
+- Run the server in development mode with hot reloading:
+
+
+## License
+
+This project is licensed by [@ifazo](https://github.com/ifazo). See the [LICENSE](LICENSE) file for details.
