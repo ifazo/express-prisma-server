@@ -1,68 +1,26 @@
-# postgres-prisma-project
-This is created by @Ifazo
+# Express Prisma Server
+Node.js backend server built using **Express.js** and **Prisma** in modular pattern. This project demonstrates integrating Express with Prisma ORM to build a RESTful API.
 
->> https://ifaz-postgres-prisma.vercel.app/
+## Features
+- Express.js for the webserver
+- Prisma ORM for database management
+- JWT Authentication for user login and access control
+- User management and CRUD operations
+- Support for creating and managing categories and products
 
-# Application Routes:
+## Tech Stack
+- **Node.js**: JavaScript runtime for building the backend
+- **Express.js**: Web framework for building RESTful APIs
+- **Prisma**: Next-generation ORM for Node.js and TypeScript
+- **JWT**: JSON Web Tokens for authentication
+- **PostgreSQL**: Database options (based on your Prisma setup)
 
-### Auth
+## Live Server
+- [Live Server](https://express-prisma-server.onrender.com/)
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/auth/signup (POST)
+## Postman
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/27476393-4fc64944-a233-4e1b-9e39-aed5892aa072?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D27476393-4fc64944-a233-4e1b-9e39-aed5892aa072%26entityType%3Dcollection%26workspaceId%3D82c53f50-c768-4ae4-8f30-f9cfdaffd9d9)
 
-https://ifaz-postgres-prisma.vercel.app/api/v1/auth/signin (POST)
-
-### User
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/profile (Get)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/users (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/users/b1404be6-72bd-4315-8e9d-4f287e0aa461 (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/users/b1404be6-72bd-4315-8e9d-4f287e0aa461 (PATCH)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/users/b1404be6-72bd-4315-8e9d-4f287e0aa461 ( DELETE)
-
-### Category
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/create-category (POST) 
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/4035eedb-a2b4-47f0-b1db-274f7f83579d (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/4035eedb-a2b4-47f0-b1db-274f7f83579d (PATCH)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/categories/4035eedb-a2b4-47f0-b1db-274f7f83579d ( DELETE)
-
-### Book
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/create-book (POST)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/c811d00b-4eec-46eb-aef3-680f16d1bc2a/category (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/85be0d2b-0ca4-49e1-bda8-c0fbc70c5ab4 (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/85be0d2b-0ca4-49e1-bda8-c0fbc70c5ab4 (PATCH)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/books/85be0d2b-0ca4-49e1-bda8-c0fbc70c5ab4 ( DELETE)
-
-### Order
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders/create-order (POST)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders (GET) [Only Specific Customers]
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/orders/:orderId (Get)
-
-### Review & Ratings
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/reviews (GET)
-
-https://ifaz-postgres-prisma.vercel.app/api/v1/reviews (POST)
-
+# Lisence
+- **License**: This project is created by [@ifazo](https://github.com/ifazo)
 
